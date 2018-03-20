@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<p>Receiver</p>
+<script src="/socket.io/socket.io.js"></script>
+<script>
+var socket = io()
+socket.on('event67', function (data) {
+  confirm(data)
+  var xhttp = new XMLHttpRequest();
+  xhttp.open("POST", "http://localhost:8085?i="+data, true)
+	xhttp.send()
+})
+</script>
+</html>
