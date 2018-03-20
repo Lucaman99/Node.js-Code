@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<p>Receiver</p>
+<script src="/socket.io/socket.io.js"></script>
+<script>
+var socket = io()
+socket.on('event67', function (data) {
+  socket.emit('event68', data)
+})
+</script>
+</html>
